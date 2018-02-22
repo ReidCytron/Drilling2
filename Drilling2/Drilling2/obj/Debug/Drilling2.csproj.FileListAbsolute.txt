@@ -1,0 +1,24 @@
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\bin\Debug\Drilling2.exe.config
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\bin\Debug\Drilling2.exe
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\bin\Debug\Drilling2.pdb
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\obj\Debug\Drilling2.csprojResolveAssemblyReference.cache
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\obj\Debug\Drilling2.WellboreTrajectoryForm.resources
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\obj\Debug\Drilling2.Properties.Resources.resources
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\obj\Debug\Drilling2.csproj.GenerateResource.Cache
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\obj\Debug\Drilling2.exe
+C:\Users\rbc658\Desktop\Drilling2\Drilling2\obj\Debug\Drilling2.pdb
+D:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.pdb
+D:\Drilling II\Drilling2\Drilling2\bin\Debug\Drilling2.pdb
+D:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.csprojResolveAssemblyReference.cache
+D:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.Properties.Resources.resources
+D:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.csproj.GenerateResource.Cache
+D:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.WellboreTrajectoryForm.resources
+F:\Drilling II\Drilling2\Drilling2\bin\Debug\Drilling2.exe.config
+F:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.exe
+F:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.csprojResolveAssemblyReference.cache
+F:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.WellboreTrajectoryForm.resources
+F:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.Properties.Resources.resources
+F:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.csproj.GenerateResource.Cache
+D:\Drilling II\Drilling2\Drilling2\bin\Debug\Drilling2.exe.config
+D:\Drilling II\Drilling2\Drilling2\bin\Debug\Drilling2.exe
+D:\Drilling II\Drilling2\Drilling2\obj\Debug\Drilling2.exe
