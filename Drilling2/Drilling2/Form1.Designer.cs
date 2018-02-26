@@ -68,10 +68,12 @@
             this.Tolerance = new System.Windows.Forms.TextBox();
             this.Turn_Rate = new System.Windows.Forms.TextBox();
             this.Iteration_Increment = new System.Windows.Forms.TextBox();
-            this.Done_Button = new System.Windows.Forms.Button();
+            this.Wellbore_Trajectory_Button = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.Save_File_Dialogue = new System.Windows.Forms.TextBox();
+            this.Save_File_WT = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.Survey_Button = new System.Windows.Forms.Button();
+            this.Save_Button_WT = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // W_Method
@@ -81,7 +83,11 @@
             "Angle Averaging",
             "Minimum Curvature",
             "Tangential",
-            "Radius of Curvature"});
+            "Radius of Curvature",
+            "Improved Angle Averaging Method",
+            "Secant Method",
+            "Helical Arc Method",
+            "Circular Arc Method"});
             this.W_Method.Location = new System.Drawing.Point(203, 12);
             this.W_Method.Name = "W_Method";
             this.W_Method.Size = new System.Drawing.Size(182, 21);
@@ -338,13 +344,13 @@
             // 
             this.Length_Output_Unit.FormattingEnabled = true;
             this.Length_Output_Unit.Items.AddRange(new object[] {
-            "Feet",
-            "Meters",
-            "Inches",
-            "Yards",
-            "Kilometers",
+            "Aggies",
             "Bohr Radius",
-            "Aggies"});
+            "Feet",
+            "Inches",
+            "Kilometers",
+            "Meters",
+            "Yards"});
             this.Length_Output_Unit.Location = new System.Drawing.Point(284, 459);
             this.Length_Output_Unit.Name = "Length_Output_Unit";
             this.Length_Output_Unit.Size = new System.Drawing.Size(121, 21);
@@ -439,7 +445,7 @@
             this.Z_Target.Name = "Z_Target";
             this.Z_Target.Size = new System.Drawing.Size(58, 20);
             this.Z_Target.TabIndex = 33;
-            this.Z_Target.Text = "20000.0";
+            this.Z_Target.Text = "15000.0";
             this.Z_Target.TextChanged += new System.EventHandler(this.Z_Target_TextChanged);
             // 
             // KOP_Length
@@ -489,17 +495,17 @@
             this.Iteration_Increment.Name = "Iteration_Increment";
             this.Iteration_Increment.Size = new System.Drawing.Size(100, 20);
             this.Iteration_Increment.TabIndex = 39;
-            this.Iteration_Increment.Text = "25.0";
+            this.Iteration_Increment.Text = "1.0";
             // 
-            // Done_Button
+            // Wellbore_Trajectory_Button
             // 
-            this.Done_Button.Location = new System.Drawing.Point(225, 561);
-            this.Done_Button.Name = "Done_Button";
-            this.Done_Button.Size = new System.Drawing.Size(75, 23);
-            this.Done_Button.TabIndex = 40;
-            this.Done_Button.Text = "Done";
-            this.Done_Button.UseVisualStyleBackColor = true;
-            this.Done_Button.Click += new System.EventHandler(this.Done_Button_Click);
+            this.Wellbore_Trajectory_Button.Location = new System.Drawing.Point(168, 586);
+            this.Wellbore_Trajectory_Button.Name = "Wellbore_Trajectory_Button";
+            this.Wellbore_Trajectory_Button.Size = new System.Drawing.Size(158, 23);
+            this.Wellbore_Trajectory_Button.TabIndex = 40;
+            this.Wellbore_Trajectory_Button.Text = "Wellbore Trajectory Simulation";
+            this.Wellbore_Trajectory_Button.UseVisualStyleBackColor = true;
+            this.Wellbore_Trajectory_Button.Click += new System.EventHandler(this.Done_Button_Click);
             // 
             // label18
             // 
@@ -510,32 +516,57 @@
             this.label18.TabIndex = 41;
             this.label18.Text = "Select Discritization Method";
             // 
-            // Save_File_Dialogue
+            // Save_File_WT
             // 
-            this.Save_File_Dialogue.Location = new System.Drawing.Point(284, 498);
-            this.Save_File_Dialogue.Name = "Save_File_Dialogue";
-            this.Save_File_Dialogue.Size = new System.Drawing.Size(230, 20);
-            this.Save_File_Dialogue.TabIndex = 43;
-            this.Save_File_Dialogue.Text = "D:\\Drilling II\\Trajectory.txt";
+            this.Save_File_WT.Location = new System.Drawing.Point(284, 498);
+            this.Save_File_WT.Name = "Save_File_WT";
+            this.Save_File_WT.ReadOnly = true;
+            this.Save_File_WT.Size = new System.Drawing.Size(230, 20);
+            this.Save_File_WT.TabIndex = 43;
+            this.Save_File_WT.Text = "C:\\Users\\rbc658\\Desktop";
+            this.Save_File_WT.TextChanged += new System.EventHandler(this.Save_File_Dialogue_TextChanged);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(12, 501);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(76, 13);
+            this.label19.Size = new System.Drawing.Size(95, 13);
             this.label19.TabIndex = 44;
-            this.label19.Text = "Save File Path";
+            this.label19.Text = "Save File Location";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // Survey_Button
+            // 
+            this.Survey_Button.Location = new System.Drawing.Point(170, 615);
+            this.Survey_Button.Name = "Survey_Button";
+            this.Survey_Button.Size = new System.Drawing.Size(156, 23);
+            this.Survey_Button.TabIndex = 45;
+            this.Survey_Button.Text = "Survey Simulation";
+            this.Survey_Button.UseVisualStyleBackColor = true;
+            this.Survey_Button.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Save_Button_WT
+            // 
+            this.Save_Button_WT.Location = new System.Drawing.Point(136, 496);
+            this.Save_Button_WT.Name = "Save_Button_WT";
+            this.Save_Button_WT.Size = new System.Drawing.Size(122, 23);
+            this.Save_Button_WT.TabIndex = 46;
+            this.Save_Button_WT.Text = "Wellbore Trajectory";
+            this.Save_Button_WT.UseVisualStyleBackColor = true;
+            this.Save_Button_WT.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // WellboreTrajectoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 606);
+            this.ClientSize = new System.Drawing.Size(555, 662);
+            this.Controls.Add(this.Save_Button_WT);
+            this.Controls.Add(this.Survey_Button);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.Save_File_Dialogue);
+            this.Controls.Add(this.Save_File_WT);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.Done_Button);
+            this.Controls.Add(this.Wellbore_Trajectory_Button);
             this.Controls.Add(this.Iteration_Increment);
             this.Controls.Add(this.Turn_Rate);
             this.Controls.Add(this.Tolerance);
@@ -627,10 +658,12 @@
         private System.Windows.Forms.TextBox Tolerance;
         private System.Windows.Forms.TextBox Turn_Rate;
         private System.Windows.Forms.TextBox Iteration_Increment;
-        private System.Windows.Forms.Button Done_Button;
+        private System.Windows.Forms.Button Wellbore_Trajectory_Button;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox Save_File_Dialogue;
+        private System.Windows.Forms.TextBox Save_File_WT;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button Survey_Button;
+        private System.Windows.Forms.Button Save_Button_WT;
 
     }
 }
